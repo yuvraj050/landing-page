@@ -1,20 +1,15 @@
 import "./App.css";
+
 function App() {
   return (
     <div className="container">
       <nav>
-        <img src="images/logo.png" className="logo" alt="imaged" />
-      {/* eslint-disable jsx-a11y/anchor-is-valid */}
-<ul>
-  <li><a href="#">Travel Guide</a></li>
-  <li><a href="#">Famous Places</a></li>
-  <li><a href="#">Contact Us</a></li>
-</ul>
-{/* eslint-enable jsx-a11y/anchor-is-valid */}
-
-
-
-
+        <img src="images/logo.png" className="logo" alt="logo" />
+        <ul>
+          <li><a href="#">Travel Guide</a></li>
+          <li><a href="#">Famous Places</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
         <button className="btn">
           <img src="images/icon.png" alt="icon" /> Bookings
         </button>
@@ -38,9 +33,8 @@ function App() {
           </button>
         </form>
       </div>
-      <p></p>
     </div>
   );
 }
- 
+
 export default App;

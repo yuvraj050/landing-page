@@ -4,16 +4,18 @@
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
 }
-
+ 
 .container {
   width: 100%;
   min-height: 100vh;
-  background-image: linear-gradient(rgb(9, 0, 77, 0.65), rgba(9, 0, 77, 0.65)), url("https://picsum.photos/1920/1080");
+  background-image: linear-gradient(rgb(9, 0, 77, 0.65), rgba(9, 0, 77, 0.65));
+  background-image: url("https://picsum.photos/1920/1080");
+ 
   background-size: cover;
   background-position: center;
   padding: 10px 8%;
 }
-
+ 
 nav {
   width: 100%;
   display: flex;
@@ -21,31 +23,31 @@ nav {
   justify-content: space-between;
   padding: 10px 0;
 }
-
+ 
 .logo {
   width: 180px;
   cursor: pointer;
 }
-
+ 
 nav ul {
   list-style: none;
   width: 100%;
   text-align: right;
   padding-right: 60px;
 }
-
+ 
 nav ul li {
   display: inline-block;
   margin: 10px 20px;
 }
-
+ 
 nav ul li a {
   color: #ffffff;
   text-decoration: none;
   font-size: 20px;
   font-weight: 400;
 }
-
+ 
 .btn {
   display: flex;
   align-items: center;
@@ -58,25 +60,25 @@ nav ul li a {
   font-weight: 500;
   cursor: pointer;
 }
-
+ 
 .btn img {
   width: 20px;
   margin-right: 10px;
 }
-
+ 
 .content {
   margin-top: 14%;
   color: #fff;
   max-width: 620px;
 }
-
+ 
 .content h1 {
   font-size: 70px;
   font-weight: 800;
   line-height: 85px;
   margin-bottom: 25px;
 }
-
+ 
 .content form {
   display: flex;
   align-items: center;
@@ -85,7 +87,7 @@ nav ul li a {
   padding: 10px;
   margin-top: 30px;
 }
-
+ 
 .content form input {
   border: 0;
   outline: 0;
@@ -93,39 +95,8 @@ nav ul li a {
   font-size: 16px;
   padding-left: 10px;
 }
-
+ 
 .content form .btn {
   font-size: 15px;
   padding: 10px 30px;
-}
-
-/* Media Queries for responsiveness */
-@media (max-width: 768px) {
-  .content h1 {
-    font-size: 50px;
-    line-height: 60px;
-  }
-
-  .content form {
-    flex-direction: column;
-  }
-
-  .content form input {
-    margin-bottom: 10px;
-  }
-
-  nav ul {
-    padding-right: 0;
-    text-align: center;
-  }
-
-  nav ul li {
-    display: block;
-    margin: 10px 0;
-  }
-
-  .btn {
-    width: 100%;
-    justify-content: center;
-  }
 }
