@@ -28,10 +28,9 @@ function App() {
           Places to explore
         </h1>
         <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book.
+          
+          Welcome to our travel guide! Discover breathtaking destinations and hidden gems around the world. Our mission is to inspire and guide you through the most beautiful places to explore. Whether you're an adventurer seeking thrilling experiences or a traveler looking for serene retreats, we have something for everyone. Join us on this journey to uncover the wonders of the world and create unforgettable memories. Start your adventure today and explore the beauty that awaits you!
+  
         </p>
         <form>
           <input type="text" placeholder="Country Name" />
