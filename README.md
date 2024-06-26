@@ -1,5 +1,7 @@
 # Responsive React Page
 
+![Responsive Landing-Page](https://raw.githubusercontent.com/yuvraj050/landing-page/main/responsive.png)
+
 This project is a simple React page designed to be responsive on both mobile and laptop screens. It includes a navigation menu, a beautiful background, and a search form.
 
 ## Table of Contents
