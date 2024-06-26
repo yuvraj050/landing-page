@@ -8,16 +8,14 @@
 .container {
   width: 100%;
   min-height: 100vh;
-  background-image: linear-gradient(rgba(9, 0, 77, 0.65), rgba(9, 0, 77, 0.65)), url("https://picsum.photos/1920/1080");
+  background-image: linear-gradient(rgb(9, 0, 77, 0.65), rgba(9, 0, 77, 0.65)), url("https://picsum.photos/1920/1080");
   background-size: cover;
   background-position: center;
   padding: 10px 8%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
 nav {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -25,25 +23,25 @@ nav {
 }
 
 .logo {
-  width: 150px;
+  width: 180px;
   cursor: pointer;
 }
 
 nav ul {
   list-style: none;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
+  align-items: center;
+  padding-right: 60px;
 }
 
 nav ul li {
-  margin: 0 15px;
+  margin: 10px 20px;
 }
 
 nav ul li a {
   color: #ffffff;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 400;
 }
 
@@ -66,102 +64,67 @@ nav ul li a {
 }
 
 .content {
+  margin-top: 14%;
   color: #fff;
-  text-align: center;
-  max-width: 800px;
-  margin: 0 auto;
+  max-width: 620px;
 }
 
 .content h1 {
-  font-size: 48px;
+  font-size: 70px;
   font-weight: 800;
-  line-height: 58px;
-  margin-bottom: 20px;
-}
-
-.content p {
-  font-size: 16px;
-  line-height: 1.6;
-  margin-bottom: 30px;
+  line-height: 85px;
+  margin-bottom: 25px;
 }
 
 .content form {
   display: flex;
-  flex-direction: column;
   align-items: center;
   background: #fff;
   border-radius: 5px;
   padding: 10px;
+  margin-top: 30px;
 }
 
 .content form input {
   border: 0;
   outline: 0;
   width: 100%;
-  max-width: 400px;
   font-size: 16px;
-  padding: 10px;
-  margin-bottom: 10px;
+  padding-left: 10px;
 }
 
 .content form .btn {
   font-size: 15px;
-  padding: 10px 20px;
-  width: 100%;
-  max-width: 200px;
+  padding: 10px 30px;
 }
 
+/* Media Queries for responsiveness */
 @media (max-width: 768px) {
-  .logo {
-    width: 120px;
+  .content h1 {
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  .content form {
+    flex-direction: column;
+  }
+
+  .content form input {
+    margin-bottom: 10px;
   }
 
   nav ul {
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    padding-right: 0;
   }
 
   nav ul li {
     margin: 10px 0;
   }
 
-  .content h1 {
-    font-size: 36px;
-    line-height: 42px;
-  }
-
-  .content p {
-    font-size: 14px;
-  }
-
-  .content form input {
-    max-width: 300px;
-  }
-
-  .content form .btn {
-    max-width: 150px;
-  }
-}
-
-@media (max-width: 480px) {
-  .logo {
-    width: 100px;
-  }
-
-  .content h1 {
-    font-size: 28px;
-    line-height: 34px;
-  }
-
-  .content p {
-    font-size: 12px;
-  }
-
-  .content form input {
-    max-width: 250px;
-  }
-
-  .content form .btn {
-    max-width: 120px;
+  .btn {
+    width: 100%;
+    justify-content: center;
   }
 }

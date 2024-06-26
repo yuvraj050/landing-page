@@ -1,18 +1,25 @@
 import "./App.css";
+import { useState } from "react";
 
 function App() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   return (
     <div className="container">
       <nav>
-        <img src="images/logo.png" className="logo" alt="logo" />
-        <ul>
+        <img src="images/logo.png" className="logo" alt="imaged" />
+        <button className="btn" onClick={toggleMenu}>
+          <img src="images/icon.png" alt="icon" /> Menu
+        </button>
+        <ul style={{ display: menuOpen ? "block" : "none" }}>
           <li><a href="#">Travel Guide</a></li>
           <li><a href="#">Famous Places</a></li>
           <li><a href="#">Contact Us</a></li>
         </ul>
-        <button className="btn">
-          <img src="images/icon.png" alt="icon" /> Bookings
-        </button>
       </nav>
       <div className="content">
         <h1>
