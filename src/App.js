@@ -5,13 +5,11 @@ function App() {
     <div className="container">
       <nav>
         <img src="images/logo.png" className="logo" alt="logo" />
-        {/* eslint-disable jsx-a11y/anchor-is-valid */}
         <ul>
           <li><a href="#">Travel Guide</a></li>
           <li><a href="#">Famous Places</a></li>
           <li><a href="#">Contact Us</a></li>
         </ul>
-        {/* eslint-enable jsx-a11y/anchor-is-valid */}
         <button className="btn">
           <img src="images/icon.png" alt="icon" /> Bookings
         </button>

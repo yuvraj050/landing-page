@@ -8,10 +8,13 @@
 .container {
   width: 100%;
   min-height: 100vh;
-  background-image: linear-gradient(rgb(9, 0, 77, 0.65), rgba(9, 0, 77, 0.65)), url("https://picsum.photos/1920/1080");
+  background-image: linear-gradient(rgba(9, 0, 77, 0.65), rgba(9, 0, 77, 0.65)), url("https://picsum.photos/1920/1080");
   background-size: cover;
   background-position: center;
-  padding: 10px;
+  padding: 10px 8%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 nav {
@@ -22,25 +25,25 @@ nav {
 }
 
 .logo {
-  width: 120px;
+  width: 150px;
   cursor: pointer;
 }
 
 nav ul {
   list-style: none;
-  text-align: right;
-  padding-right: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
 }
 
 nav ul li {
-  display: inline-block;
-  margin: 10px;
+  margin: 0 15px;
 }
 
 nav ul li a {
   color: #ffffff;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
 }
 
@@ -64,61 +67,85 @@ nav ul li a {
 
 .content {
   color: #fff;
-  max-width: 100%;
-  padding: 20px;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .content h1 {
-  font-size: 36px;
+  font-size: 48px;
   font-weight: 800;
-  line-height: 42px;
-  margin-bottom: 15px;
+  line-height: 58px;
+  margin-bottom: 20px;
 }
 
 .content p {
   font-size: 16px;
   line-height: 1.6;
+  margin-bottom: 30px;
 }
 
 .content form {
   display: flex;
+  flex-direction: column;
   align-items: center;
   background: #fff;
   border-radius: 5px;
   padding: 10px;
-  margin-top: 20px;
 }
 
-.content form input[type="text"] {
-  flex: 1;
+.content form input {
   border: 0;
   outline: 0;
+  width: 100%;
+  max-width: 400px;
   font-size: 16px;
   padding: 10px;
+  margin-bottom: 10px;
 }
 
 .content form .btn {
   font-size: 15px;
   padding: 10px 20px;
+  width: 100%;
+  max-width: 200px;
 }
 
 @media (max-width: 768px) {
   .logo {
-    width: 100px;
+    width: 120px;
   }
 
   nav ul {
-    text-align: center;
-    padding-right: 0;
+    flex-direction: column;
+    align-items: center;
   }
 
   nav ul li {
-    display: block;
     margin: 10px 0;
   }
 
-  .content {
-    margin-top: 10%;
+  .content h1 {
+    font-size: 36px;
+    line-height: 42px;
+  }
+
+  .content p {
+    font-size: 14px;
+  }
+
+  .content form input {
+    max-width: 300px;
+  }
+
+  .content form .btn {
+    max-width: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    width: 100px;
   }
 
   .content h1 {
@@ -127,69 +154,14 @@ nav ul li a {
   }
 
   .content p {
-    font-size: 14px;
-  }
-
-  .content form {
-    flex-direction: column;
-    padding: 10px 0;
-  }
-
-  .content form input[type="text"] {
-    width: 100%;
-    margin-bottom: 10px;
-  }
-
-  .content form .btn {
-    width: 100%;
-    padding: 10px;
-  }
-}
-
-@media (max-width: 480px) {
-  .logo {
-    width: 80px;
-  }
-
-  nav {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  nav ul {
-    text-align: center;
-    padding-right: 0;
-  }
-
-  nav ul li {
-    margin: 5px 0;
-  }
-
-  .content {
-    margin-top: 5%;
-  }
-
-  .content h1 {
-    font-size: 24px;
-    line-height: 28px;
-  }
-
-  .content p {
     font-size: 12px;
   }
 
-  .content form {
-    flex-direction: column;
-    padding: 10px 0;
-  }
-
-  .content form input[type="text"] {
-    width: 100%;
-    margin-bottom: 10px;
+  .content form input {
+    max-width: 250px;
   }
 
   .content form .btn {
-    width: 100%;
-    padding: 10px;
+    max-width: 120px;
   }
 }
