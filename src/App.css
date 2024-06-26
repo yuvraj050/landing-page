@@ -4,50 +4,46 @@
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
 }
- 
+
 .container {
   width: 100%;
   min-height: 100vh;
-  background-image: linear-gradient(rgb(9, 0, 77, 0.65), rgba(9, 0, 77, 0.65));
-  background-image: url("https://picsum.photos/1920/1080");
- 
+  background-image: linear-gradient(rgb(9, 0, 77, 0.65), rgba(9, 0, 77, 0.65)), url("https://picsum.photos/1920/1080");
   background-size: cover;
   background-position: center;
-  padding: 10px 8%;
+  padding: 10px;
 }
- 
+
 nav {
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 10px 0;
 }
- 
+
 .logo {
-  width: 180px;
+  width: 120px;
   cursor: pointer;
 }
- 
+
 nav ul {
   list-style: none;
-  width: 100%;
   text-align: right;
-  padding-right: 60px;
+  padding-right: 10px;
 }
- 
+
 nav ul li {
   display: inline-block;
-  margin: 10px 20px;
+  margin: 10px;
 }
- 
+
 nav ul li a {
   color: #ffffff;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 400;
 }
- 
+
 .btn {
   display: flex;
   align-items: center;
@@ -60,43 +56,140 @@ nav ul li a {
   font-weight: 500;
   cursor: pointer;
 }
- 
+
 .btn img {
   width: 20px;
   margin-right: 10px;
 }
- 
+
 .content {
-  margin-top: 14%;
   color: #fff;
-  max-width: 620px;
+  max-width: 100%;
+  padding: 20px;
 }
- 
+
 .content h1 {
-  font-size: 70px;
+  font-size: 36px;
   font-weight: 800;
-  line-height: 85px;
-  margin-bottom: 25px;
+  line-height: 42px;
+  margin-bottom: 15px;
 }
- 
+
+.content p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
 .content form {
   display: flex;
   align-items: center;
   background: #fff;
   border-radius: 5px;
   padding: 10px;
-  margin-top: 30px;
+  margin-top: 20px;
 }
- 
-.content form input {
+
+.content form input[type="text"] {
+  flex: 1;
   border: 0;
   outline: 0;
-  width: 100%;
   font-size: 16px;
-  padding-left: 10px;
+  padding: 10px;
 }
- 
+
 .content form .btn {
   font-size: 15px;
-  padding: 10px 30px;
+  padding: 10px 20px;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    width: 100px;
+  }
+
+  nav ul {
+    text-align: center;
+    padding-right: 0;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .content {
+    margin-top: 10%;
+  }
+
+  .content h1 {
+    font-size: 28px;
+    line-height: 34px;
+  }
+
+  .content p {
+    font-size: 14px;
+  }
+
+  .content form {
+    flex-direction: column;
+    padding: 10px 0;
+  }
+
+  .content form input[type="text"] {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .content form .btn {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    width: 80px;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul {
+    text-align: center;
+    padding-right: 0;
+  }
+
+  nav ul li {
+    margin: 5px 0;
+  }
+
+  .content {
+    margin-top: 5%;
+  }
+
+  .content h1 {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .content p {
+    font-size: 12px;
+  }
+
+  .content form {
+    flex-direction: column;
+    padding: 10px 0;
+  }
+
+  .content form input[type="text"] {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .content form .btn {
+    width: 100%;
+    padding: 10px;
+  }
 }
